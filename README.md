@@ -1,5 +1,7 @@
 # theredoc
 
+[![Build Status](https://travis-ci.org/testdouble/theredoc.svg?branch=master)](https://travis-ci.org/testdouble/theredoc)
+
 A little tag function that strips leading indent from multi-line ES string
 templates. It also strips the first and last lines if they're just whitespace.
 
