@@ -1,0 +1,35 @@
+{
+  "name": "theredoc",
+  "version": "1.0.0",
+  "description": "A string template tag to strip leading indents from your heredoc-style multi-line strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "teenytest",
+    "style": "standard --fix",
+    "ci": "npm test && npm run style"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/testdouble/theredoc.git"
+  },
+  "teenytest": {
+    "testLocator": "test.js"
+  },
+  "keywords": [
+    "heredoc",
+    "string",
+    "template",
+    "tag",
+    "function"
+  ],
+  "author": "Justin Searls <searls@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/testdouble/theredoc/issues"
+  },
+  "homepage": "https://github.com/testdouble/theredoc#readme",
+  "devDependencies": {
+    "standard": "^11.0.1",
+    "teenytest": "^5.1.1"
+  }
+}
