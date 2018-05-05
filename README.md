@@ -2,8 +2,13 @@
 
 [![Build Status](https://travis-ci.org/testdouble/theredoc.svg?branch=master)](https://travis-ci.org/testdouble/theredoc)
 
-A little tag function that strips leading indent from multi-line ES string
-templates. It also strips the first and last lines if they're just whitespace.
+A little [template tag
+function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates)
+that strips the leading indent from multi-line ES string templates. It also
+strips the first and last lines if they're just whitespace.
+
+If you write any multi-line template strings to error messages or the console,
+you should be tagging them with theredoc!
 
 ## Install
 
@@ -68,10 +73,10 @@ Something bad happened.
       //...
 ```
 
-Additionally, to format the string neatly at all in the above will also add a
-extraneous leading and trailing line containing nothing but whitespace.
+Additionally, the newlines added to retain the formatting of the function call
+will be retained in the output, which you probably also don't want.
 
-Instead, `theredoc` lets you write this:
+Instead, `theredoc` fixes both those issues by letting you write this:
 
 ```js
         //...
@@ -94,7 +99,7 @@ Something bad happened.
 ```
 
 With the leading 10 spaces stripped from each line and (since they only contain
-whitespace) stripping the first and last lines of the template string.
+whitespace) having stripped the first and last lines of the template string.
 
 If you still don't think this is nifty, I don't know what to tell you!
 
@@ -117,7 +122,7 @@ downsides:
   all the cool transforms you can do, 99.9% of the time I really just want
   indent-stripping heredocs
 
-### What about tabs (`\t`)?**
+### What about tabs (`\t`)?
 
 Theredoc only deals with space character indentation, sorry!
 
