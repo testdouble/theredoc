@@ -14,14 +14,22 @@ $ npm install theredoc
 ``` js
 const theredoc = require('theredoc')
 
-console.log(theredoc`
-  I want to write multipline lines
-  but don't want to mess up my indenting.
-    Ok?
-`)
+function some () {
+  function deeply () {
+    function nested () {
+      function code () {
+        console.log(theredoc`
+          I want to write multipline lines
+          but don't want to mess up my indenting.
+            Ok?
+        `)
+      }
+    }
+  }
+}
 ```
 
-Will output:
+Will look tidy in the code listing but output no superfluous indents:
 
 ```
 I want to write multipline lines
