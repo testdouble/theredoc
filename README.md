@@ -46,7 +46,7 @@ but don't want to mess up my indenting.
 
 ## Questions
 
-### Why should I use this:
+### Why should I use this?
 
 Because good messages are often long messages, but out-of-the-box, [ES template
 strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
