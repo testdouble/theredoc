@@ -5,10 +5,7 @@
 A little [template tag
 function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates)
 that strips the leading indent from multi-line ES string templates. It also
-strips the first and last lines if they're just whitespace. If you're using template strings to write [heredocs](https://en.wikipedia.org/wiki/Here_document), theredoc attempts to tidy them up a bit.
-
-If you write any multi-line template strings to error messages or the console,
-you should be tagging them with theredoc!
+strips the first and last lines if they're just whitespace. If you're using template strings to write [heredocs](https://en.wikipedia.org/wiki/Here_document), you should try tagging them with `theredoc` to tidy them up a bit!
 
 ## Install
 
