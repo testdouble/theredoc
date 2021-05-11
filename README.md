@@ -1,6 +1,6 @@
 # theredoc
 
-[![Build Status](https://travis-ci.org/testdouble/theredoc.svg?branch=master)](https://travis-ci.org/testdouble/theredoc)
+[![Build Status](https://travis-ci.org/testdouble/theredoc.svg?branch=main)](https://travis-ci.org/testdouble/theredoc)
 
 A little [template tag
 function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates)
